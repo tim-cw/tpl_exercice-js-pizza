@@ -1,0 +1,41 @@
+/* ==========================================================================
+   button / component
+   ========================================================================== */
+
+.button,
+.button-secondary {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.button-secondary {
+    background: var(--color-black);
+    border: 2px solid var(--color-black);
+    color: var(--color-white);
+    padding: 15px 30px;
+    font-weight: bold;
+
+    &:hover {
+        border-color: var(--color-black);
+        background: transparent;
+        color: var(--color-black);
+    }
+}
+
+.button {
+    background: transparent;
+    border: 2px solid var(--bg-color);
+    color: var(--bg-color);
+    padding: 10px;
+
+    &:hover {
+        color: var(--color-black);
+        background: var(--bg-color);
+    }
+
+    &.is-active {
+        color: var(--color-white);
+        background: var(--color-black);
+        border-color: var(--color-black);
+    }
+}

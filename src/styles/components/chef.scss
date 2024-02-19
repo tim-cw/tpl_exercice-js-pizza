@@ -1,0 +1,105 @@
+/* ==========================================================================
+   CHEF / COMPONENTS
+   ========================================================================== */
+
+.battle {
+    @media (min-width: $breakpoint-mlg) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.battle__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    padding-top: var(--spacing-sm);
+
+    p {
+        margin: 0;
+    }
+}
+
+.chef {
+    // Ces variables sont spécifque à l'élément avec la classe .chef
+    // et sont disponibles pour TOUS les enfants qui sont dans .chef
+    // Ça peut-être pratique pour faire du code css où on doit parfois
+    // simplement qu'inverser des couleurs selon l'état sans avoir à redéfinir
+    // les propriétés au complet.
+    --bg-color: var(--color-white);
+    --fg-color: var(--color-primary);
+
+    background: var(--bg-color);
+    color: var(--fg-color);
+    padding: 150px 30px 50px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: start;
+    gap: 50px;
+
+    background-image: url('../assets/images/jf.png');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+
+    // 2e resto
+    &.chef-matt {
+        --bg-color: var(--color-primary);
+        --fg-color: var(--color-white);
+
+        background-image: url('../assets/images/matt.png');
+        background-position: bottom right;
+    }
+}
+
+.chef__footer {
+    color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+    text-align: center;
+}
+
+.pizza {
+    background: var(--fg-color);
+    border-radius: var(--spacing-sm);
+    width: 100%;
+    padding: var(--spacing-sm);
+    transition: transform 0.2s ease-out;
+}
+
+.pizza__image {
+    filter: grayscale(1);
+    display: block;
+    max-height: 80%;
+    max-width: 80%;
+    margin: -60px auto var(--spacing-sm);
+    transition: filter 0.4s ease-out;
+
+    @media (max-width: $breakpoint-mlg) {
+        margin-top: var(--spacing-sm);
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    &.is-active {
+        filter: grayscale(0);
+    }
+}
+
+.chef__menu {
+    display: grid;
+    gap: var(--spacing-sm);
+
+    @media (min-width: $breakpoint-sm) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.types {
+    display: grid;
+    gap: 15px;
+}
