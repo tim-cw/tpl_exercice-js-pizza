@@ -4,12 +4,22 @@
 
 :root {
     // Couleur de base
-    --color-white: #eee;
+    --color-white: #fff8f0;
     --color-black: #000;
 
     // Couleurs du projet
-    --color-primary: #d63112;
-    --color-secondary: #018e42;
+    --color-secondary: #d76947;
+    --color-primary: #af4319;
+    --color-primary-dark: color-mix(
+        in srgb,
+        var(--color-primary),
+        var(--color-black) 40%
+    );
+    --color-primary-light: color-mix(
+        in srgb,
+        var(--color-primary),
+        var(--color-white) 50%
+    );
 
-    --color-bg-primary: #212121;
+    --color-bg-primary: #2d232e;
 }

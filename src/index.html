@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>timzzeria : Le combat des pizzerias</title>
+        <title>poutim : C'est pas dégueux!</title>
 
         <link rel="stylesheet" href="styles/main.css" />
 
@@ -15,74 +15,88 @@
             <header class="battle__header">
                 <div class="wrapper">
                     <h1>
-                        timz
-                        <span>zeria</span>
+                        pou
+                        <span>tim</span>
                     </h1>
-                    <p>Le combat des pizzerias</p>
+                    <p>C'est pas dégueux!</p>
                 </div>
             </header>
-            <section class="chef">
-                <div class="chef__menu">
-                    <article class="pizza">
-                        <img src="assets/images/pizza.png" alt="" class="pizza__image" />
-                        <div class="types">
-                            <button class="button">jamboneuse</button>
-                            <button class="button">legumineuse</button>
-                            <button class="button">viandeuse</button>
-                        </div>
-                    </article>
-                    <article class="pizza">
-                        <img src="assets/images/pizza.png" alt="" class="pizza__image" />
-                        <div class="types">
-                            <button class="button">jamboneuse</button>
-                            <button class="button">legumineuse</button>
-                            <button class="button">viandeuse</button>
-                        </div>
-                    </article>
-                    <article class="pizza">
-                        <img src="assets/images/pizza.png" alt="" class="pizza__image" />
-                        <div class="types">
-                            <button class="button">jamboneuse</button>
-                            <button class="button">legumineuse</button>
-                            <button class="button">viandeuse</button>
-                        </div>
-                    </article>
-                </div>
-                <div class="chef__footer">
-                    <button class="button-secondary">Passez la commande</button>
-                    <div class="chef__order"></div>
+            <section class="chef" data-component="Chef">
+                <div class="chef__wrapper">
+                    <div class="chef__menu">
+                        <article class="poutine">
+                            <img src="assets/images/poutine.png" alt="" class="poutine__image" />
+                            <div class="types">
+                                <button class="button">poulet</button>
+                                <button class="button">saucisse</button>
+                                <button class="button">touski</button>
+                            </div>
+                        </article>
+                        <article class="poutine">
+                            <img src="assets/images/poutine.png" alt="" class="poutine__image" />
+                            <div class="types">
+                                <button class="button">poulet</button>
+                                <button class="button">saucisse</button>
+                                <button class="button">touski</button>
+                            </div>
+                        </article>
+                        <article class="poutine">
+                            <img src="assets/images/poutine.png" alt="" class="poutine__image" />
+                            <div class="types">
+                                <button class="button">poulet</button>
+                                <button class="button">saucisse</button>
+                                <button class="button">touski</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="chef__footer">
+                        <button class="button-secondary">
+                            Commander chez JF
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                        <div class="chef__order"></div>
+                    </div>
                 </div>
             </section>
-            <section class="chef chef-matt">
-                <div class="chef__menu">
-                    <article class="pizza">
-                        <img src="assets/images/pizza.png" alt="" class="pizza__image" />
-                        <div class="types">
-                            <button class="button">jamboneuse</button>
-                            <button class="button">legumineuse</button>
-                            <button class="button">viandeuse</button>
-                        </div>
-                    </article>
-                    <article class="pizza">
-                        <img src="assets/images/pizza.png" alt="" class="pizza__image" />
-                        <div class="types">
-                            <button class="button">jamboneuse</button>
-                            <button class="button">legumineuse</button>
-                            <button class="button">viandeuse</button>
-                        </div>
-                    </article>
-                    <article class="pizza">
-                        <img src="assets/images/pizza.png" alt="" class="pizza__image" />
-                        <div class="types">
-                            <button class="button">jamboneuse</button>
-                            <button class="button">legumineuse</button>
-                            <button class="button">viandeuse</button>
-                        </div>
-                    </article>
-                </div>
-                <div class="chef__footer">
-                    <button class="button-secondary">Passez la commande</button>
-                    <div class="chef__order"></div>
+            <section class="chef chef-matt" data-component="Chef">
+                <div class="chef__wrapper">
+                    <div class="chef__menu">
+                        <article class="poutine">
+                            <img src="assets/images/poutine.png" alt="" class="poutine__image" />
+                            <div class="types">
+                                <button class="button">poulet</button>
+                                <button class="button">saucisse</button>
+                                <button class="button">touski</button>
+                            </div>
+                        </article>
+                        <article class="poutine">
+                            <img src="assets/images/poutine.png" alt="" class="poutine__image" />
+                            <div class="types">
+                                <button class="button">poulet</button>
+                                <button class="button">saucisse</button>
+                                <button class="button">touski</button>
+                            </div>
+                        </article>
+                        <article class="poutine">
+                            <img src="assets/images/poutine.png" alt="" class="poutine__image" />
+                            <div class="types">
+                                <button class="button">poulet</button>
+                                <button class="button">saucisse</button>
+                                <button class="button">touski</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="chef__footer">
+                        <button class="button-secondary">
+                            Commander chez Matt
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                        <div class="chef__order"></div>
+                    </div>
                 </div>
             </section>
         </div>

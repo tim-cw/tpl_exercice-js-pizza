@@ -4,38 +4,56 @@
 
 .button,
 .button-secondary {
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: all 0.3s ease-out;
+    transition: all 0.4s var(--ease-out-expo);
+    font-size: typo(16px);
 }
 .button-secondary {
     background: var(--color-black);
     border: 2px solid var(--color-black);
     color: var(--color-white);
-    padding: 15px 30px;
+    padding: 10px 30px;
     font-weight: bold;
+    display: inline-flex;
+    gap: 10px;
+
+    .icon {
+        transition: transform 0.4s var(--ease-out-expo);
+    }
 
     &:hover {
         border-color: var(--color-black);
         background: transparent;
         color: var(--color-black);
+
+        .icon {
+            transform: translateX(10px);
+        }
     }
 }
 
 .button {
-    background: transparent;
-    border: 2px solid var(--bg-color);
-    color: var(--bg-color);
+    border: none;
+    background: var(--color-white);
+    color: var(--color-black);
     padding: 10px;
+    position: relative;
+    transition: transform 0.4s;
 
     &:hover {
         color: var(--color-black);
-        background: var(--bg-color);
+        background: var(--color-primary-light);
     }
 
     &.is-active {
         color: var(--color-white);
         background: var(--color-black);
         border-color: var(--color-black);
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: 10px 20px;
+        font-size: typo(20px);
     }
 }
