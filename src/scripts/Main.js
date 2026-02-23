@@ -1,4 +1,4 @@
-import Icons from './utils/Icons';
+import Icons from "./utils/Icons.js";
 
 // La ligne suivante devrait être au TOUT début du init() du Main
 Icons.load();
